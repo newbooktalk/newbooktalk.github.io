@@ -1,27 +1,340 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    
     <head>
-        <title>Loop in template</title>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>介绍 | 新书语</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="一个陪伴读书的网站">
+        <meta name="generator" content="GitBook 2.6.4">
+        <meta name="author" content="书童">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-disqus/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-advanced-emoji/emojify.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-ace/ace.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-sectionx/sectionx.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-codeblock-filename/block.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-local-video/video-js.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-back-to-top-button/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-js-sequence-diagram/styles.css">
+        
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-mcqx/mcqx.css">
+        
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fbqx/fbqx.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+
+        <script src='//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js'></script>
     </head>
     <body>
-    <p>There is a list, it is <b>{{info}}</b></p>
-    <p>I will print the elements of this list in order.</p>
-    {% for element in info %}
-        <p>{{element}}</p>
-    {% end %}
-    <br>
-    {% for index,element in enumerate(info) %}
-        <p>info[{{index}}] is {{element}}
-        {% if element == "python" %}
-            <p> <b>I love this language--{{element}}</b></p>
-        {% end %}
-    {% end %}
+        
+        
+    <div class="book"
+        data-level="0"
+        data-chapter-title="介绍"
+        data-filepath="README.md"
+        data-basepath="."
+        data-revision="Tue May 02 2017 10:01:11 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
 
-    {% if "qiwsir@gmail.com" in info %}
-        <p><b>A Ha, this the python lesson of LaoQi, It is good! His email is {{info[2]}}</b></p>
-    {% end %}
-    <h2>Next, I set "python-tornado"(a string) to a variable(var)</h2>
-    {% set var="python-tornado" %}
-    <p>Would you like {{var}}?</p>
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="http://www.newbooktalk.com" target="blank" class="custom-link">Home</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter active" data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >新书语</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <div id="table-of-contents">
+<h2 id="table-of-contents">Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. &#x6211;&#x7684;&#x5DE5;&#x4F5C;&#x7B14;&#x8BB0;</a></li>
+<li><a href="#sec-2">2. &#x5305;&#x542B;&#x5185;&#x5BB9;</a></li>
+<li><a href="#sec-3">3. &#x89E3;&#x51B3;&#x65B9;&#x6848;</a></li>
+</ul>
+</div>
+</div>
+
+<h1 id="&#x6211;&#x7684;&#x5DE5;&#x4F5C;&#x7B14;&#x8BB0;">&#x6211;&#x7684;&#x5DE5;&#x4F5C;&#x7B14;&#x8BB0;<a id="sec-1" name="sec-1"></a></h1>
+<p>&#x597D;&#x8BB0;&#x6027;&#x4E0D;&#x5982;&#x70C2;&#x7B14;&#x6746;&#xFF0C;&#x56E0;&#x6B64;&#x89E6;&#x53D1;&#x4E86;&#x8BB0;&#x7B14;&#x8BB0;&#x7684;&#x5FF5;&#x5934;&#xFF0C;&#x5176;&#x5B9E;&#x4EE5;&#x524D;&#x4E5F;&#x5F04;&#x8FC7;&#xFF0C;&#x5C31;&#x662F;emacs+github pages,&#x5C31;&#x662F;&#x4EE5;&#x524D;&#x7684;&#x65F6;&#x5019;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x575A;&#x6301;&#x4E0B;&#x6765;&#x3002;&#x73B0;&#x5728;gitbook&#x7684;&#x51FA;&#x73B0;&#xFF0C;&#x5927;&#x5927;&#x8282;&#x7701;&#x4E86;&#x52B3;&#x52A8;&#xFF0C;&#x7B80;&#x5316;&#x4E86;&#x64CD;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x52A0;&#x4E0A;emacs&#x914D;&#x7F6E;&#x505A;&#x5230;&#x4E86;&#x81EA;&#x52A8;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x6361;&#x8D77;&#x8FD9;&#x4E00;&#x5957;&#xFF0C;&#x7528;&#x6765;&#x8BB0;&#x7B14;&#x8BB0;&#x3002;</p>
+<h1 id="&#x5305;&#x542B;&#x5185;&#x5BB9;">&#x5305;&#x542B;&#x5185;&#x5BB9;<a id="sec-2" name="sec-2"></a></h1>
+<p>&#x8FD9;&#x4E2A;&#x7B14;&#x8BB0;&#x4E3B;&#x8981;&#x662F;&#x8BB0;&#x5F55;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x4E2D;&#x78B0;&#x5230;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x89E3;&#x51B3;&#x7684;&#x65B9;&#x6848;&#x3002;&#x4EE5;&#x53CA;&#x9879;&#x76EE;&#x76F8;&#x5173;&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x6D41;&#x6C34;&#x8D26;&#xFF0C;&#x4EE5;&#x540E;&#x518D;&#x6574;&#x7406;&#x3002;</p>
+<h1 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;<a id="sec-3" name="sec-3"></a></h1>
+<p>gitbook&#x4E3B;&#x8981;&#x662F;&#x7528;markdown&#x65B9;&#x6848;&#xFF0C;&#x800C;&#x6211;&#x7528;&#x7684;org mode&#x65B9;&#x6848;&#xFF0C;&#x4E24;&#x8005;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x7528;emacs &#x628A;org&#x6A21;&#x5F0F;&#x8F6C;&#x4E3A;markdown&#x6A21;&#x677F;&#xFF0C;&#x7136;&#x540E;&#x7528;owncloud&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x5230;Linux&#x670D;&#x52A1;&#x5668;135.242.36.27.&#x5728;Linux&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7528;crontab&#x5B9A;&#x65F6;&#x53BB;&#x7F16;&#x8BD1;gitbook&#xFF0C;&#x751F;&#x6210;&#x76EE;&#x5F55;&#x3002;
+&#x8FD9;&#x6837;&#x867D;&#x7136;&#x6709;&#x4E9B;&#x5DE5;&#x4F5C;&#x91CF;&#xFF0C;&#x4F46;&#x603B;&#x5F52;&#x8FD8;&#x662F;&#x80FD;&#x591F;&#x8BF4;&#x7684;&#x8FC7;&#x53BB;&#xFF0C;&#x5176;&#x5B9E;&#x4E3B;&#x8981;&#x7684;&#x52B3;&#x52A8;&#x662F;&#x5199;&#x5B8C;org&#x4E4B;&#x540E;&#x9700;&#x8981;&#x624B;&#x52A8;&#x7684;&#x8F6C;&#x5316;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x8FD8;&#x597D;&#x5427;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Sun hualing 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-02-04 22:53:54
+</span></footer>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-ace/ace/ace.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-ace/ace.js"></script>
+    
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sectionx/sectionx.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-local-video/video.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-back-to-top-button/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-js-sequence-diagram/jquery-2.1.1.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-js-sequence-diagram/underscore-min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-js-sequence-diagram/sequence-diagram-min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-js-sequence-diagram/plugin.js"></script>
+    
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mcqx/js.cookie.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mcqx/mcqx.js"></script>
+    
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fbqx/fbqx.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fbqx/js.cookie.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"disqus":{"shortName":"workbook","useIdentifier":false},"github":{"url":"https://github.com/workbook"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["gitbook-use"]},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"tbfed-pagefooter":{"copyright":"Copyright &copy Sun hualing 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://www.newbooktalk.com"},"edit-link":{"base":"https://github.com/workbook/edit/master","label":"Edit This Page"},"advanced-emoji":{"myConfigKey":"test"},"include-codeblock":{},"ace":{},"emphasize":{},"katex":{},"anchors":{},"mermaid":{},"sectionx":{},"expandable-chapters":{},"codeblock-filename":{},"local-video":{},"toc":{},"back-to-top-button":{},"js-sequence-diagram":{},"mcqx":{},"fbqx":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?ff100361cdce95dd4c8fb96b4009f7bc';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
     </body>
+    
 </html>
